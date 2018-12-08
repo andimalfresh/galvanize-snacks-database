@@ -5,11 +5,10 @@ module.exports = {
   development: {
     client: 'pg',
     connection: 'postgresql://localhost/galsnackdb'
-  }
+  },
 
   production: {
     client: 'pg',
-    connection: process.env.DATABASE_URL
-
-    }
+    connection: process.env.DATABASE_URL,
+  }
 }
